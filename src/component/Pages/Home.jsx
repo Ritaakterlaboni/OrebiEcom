@@ -1,9 +1,18 @@
 
+import Adds from "../Layouts/Adds"
+import Bannar from "../Layouts/Bannar"
+import Info from "../Layouts/Info"
+import NewArrivals from "../Layouts/NewArrivals"
+
 
 const Home = () => {
   return (
     <>
-    <p className={'py-10 text-center text-3xl font-bold '}>this is home page</p>
+    <Bannar/>
+    <Info/>
+    <Adds/>
+    <NewArrivals/>
+   
     </>
   )
 }
