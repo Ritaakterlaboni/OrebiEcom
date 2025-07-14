@@ -5,7 +5,6 @@ import cap from '/src/assets/cap.png'
 import toul from '/src/assets/toul.png'
 import headphone from '/src/assets/headphone.png'
 import glasses from '/src/assets/glasses.png'
-import ProductHeading from '../ProductHeading'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,7 +21,7 @@ const EidOffers = () => {
     <>
    <div className="py-9">
      <Container>
-       <ProductHeading productsHeading={'Eid Offers'}/>
+       
         <Slider {...settings}>
             <div>
                 <Product src={cap} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>

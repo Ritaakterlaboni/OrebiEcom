@@ -5,10 +5,10 @@ import bag from '/src/assets/bag.png'
 import base from '/src/assets/base.png'
 import moslarBata from '/src/assets/moslarBata.png'
 import blackbag from '/src/assets/blackbag.png'
-import ProductHeading from '../ProductHeading'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -26,7 +26,7 @@ const SpeacialOffer = () => {
 
   <div className="pb-5">
        <Container>
-            <ProductHeading productsHeading={'Speacial Offer'}/>
+            
                 <Slider {...settings}>
                     <div>
                         <Product src={bag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
