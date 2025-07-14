@@ -6,19 +6,55 @@ import cat from '/src/assets/Doll.png'
 import jhuri from '/src/assets/jhuri.png'
 import watch from '/src/assets/watch.png'
 import ghori from '/src/assets/ghori.png'
+import ProductHeading from '../productHeading'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
 
 const NewArrivals = () => {
+    var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
   return (
     <>
-    <Container>
-        <div className="text-[39px] font-bold py-10">New Arrivals</div>
-        <Flex className='gap-6'>
-            <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
-            <Product src={jhuri} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
-            <Product src={watch} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
-            <Product src={ghori} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
-        </Flex>
+  
+     <Container>
+        <ProductHeading productsHeading={'New Arrivals'}/>
+         <Slider {...settings}>
+            <div>
+              <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+            <div>
+              <Product src={jhuri} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+            <div>
+               <Product src={watch} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+            <div>
+              <Product src={ghori} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+             <div>
+              <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+            <div>
+              <Product src={jhuri} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+             <div>
+               <Product src={watch} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+            <div>
+              <Product src={ghori} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
+            </div>
+          </Slider>
     </Container>
+
     </>
   )
 }

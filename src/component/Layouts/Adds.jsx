@@ -12,6 +12,7 @@ const Adds = () => {
     <>
     <div className="pt-[170px] pb-[65px]">
         <Container>
+           
             <Flex className='gap-9'>
                 <div className="w-[49%]">
                    <Link to={'/shop'}>
