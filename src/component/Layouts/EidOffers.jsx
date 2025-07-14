@@ -1,7 +1,6 @@
 
 import Product from '../Product'
 import Container from '../Container'
-import Flex from '../Flex'
 import cap from '/src/assets/cap.png'
 import toul from '/src/assets/toul.png'
 import headphone from '/src/assets/headphone.png'
