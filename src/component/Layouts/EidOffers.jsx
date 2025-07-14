@@ -5,7 +5,7 @@ import cap from '/src/assets/cap.png'
 import toul from '/src/assets/toul.png'
 import headphone from '/src/assets/headphone.png'
 import glasses from '/src/assets/glasses.png'
-import ProductHeading from '../productHeading'
+import ProductHeading from '../ProductHeading'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

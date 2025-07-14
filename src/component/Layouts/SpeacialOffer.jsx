@@ -1,12 +1,11 @@
 import React from 'react'
 import Product from '../Product'
 import Container from '../Container'
-import Flex from '../Flex'
 import bag from '/src/assets/bag.png'
 import base from '/src/assets/base.png'
 import moslarBata from '/src/assets/moslarBata.png'
 import blackbag from '/src/assets/blackbag.png'
-import ProductHeading from '../productHeading'
+import ProductHeading from '../ProductHeading'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";

@@ -6,7 +6,7 @@ import cat from '/src/assets/Doll.png'
 import jhuri from '/src/assets/jhuri.png'
 import watch from '/src/assets/watch.png'
 import ghori from '/src/assets/ghori.png'
-import ProductHeading from '../productHeading'
+import ProductHeading from '../ProductHeading'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
