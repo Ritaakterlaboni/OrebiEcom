@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const SpeacialOffer = () => {
       var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -24,35 +24,37 @@ const SpeacialOffer = () => {
     <>
    
 
-  <div className="pb-5">
+  <div className="pb-[100px]">
        <Container>
             <div className="text-[39px] pb-[50px] pt-[100px] font-bold">Speacial Offers</div>
-                <Slider {...settings}>
-                    <div>
+               <div className="-mx-4">
+                 <Slider {...settings}>
+                    <div className="px-4">
                         <Product src={bag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                          <Product src={base} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                         <Product src={moslarBata} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                         <Product src={blackbag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                         <Product src={bag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                          <Product src={base} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                         <Product src={moslarBata} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
-                     <div>
+                     <div className="px-4">
                         <Product src={blackbag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
                     </div>
                 </Slider>
+               </div>
     </Container>
   </div>
 

@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const NewArrivals = () => {
     var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -28,32 +28,34 @@ const NewArrivals = () => {
      <Container>
       <div className="text-[39px] pb-[50px] pt-[100px] font-bold">New Arrivals</div>
         
-         <Slider {...settings}>
-            <div>
+        <div className="-mx-4">
+           <Slider {...settings}>
+            <div className="px-4">
               <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-            <div>
+            <div className="px-4">
               <Product src={jhuri} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-            <div>
+            <div className="px-4">
                <Product src={watch} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-            <div>
+            <div className="px-4">
               <Product src={ghori} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-             <div>
+             <div className="px-4">
               <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-            <div>
+            <div className="px-4">
               <Product src={jhuri} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-             <div>
+             <div className="px-4">
                <Product src={watch} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
-            <div>
+            <div className="px-4">
               <Product src={ghori} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>
             </div>
           </Slider>
+        </div>
     </Container>
 
     </>
