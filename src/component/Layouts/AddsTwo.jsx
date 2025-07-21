@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const AddsTwo = () => {
   return (
     <>
-   <div  className="py-15">
+   <div  className="py-15 pt-[130px]">
      <Container>
         <Link to={'/shop'}>
             <Images src={adds_Two}/>

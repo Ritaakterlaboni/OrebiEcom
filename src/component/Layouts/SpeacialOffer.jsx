@@ -26,7 +26,7 @@ const SpeacialOffer = () => {
 
   <div className="pb-5">
        <Container>
-            
+            <div className="text-[39px] pb-[50px] pt-[100px] font-bold">Speacial Offers</div>
                 <Slider {...settings}>
                     <div>
                         <Product src={bag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>

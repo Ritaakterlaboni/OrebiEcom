@@ -21,7 +21,7 @@ const EidOffers = () => {
     <>
    <div className="py-9">
      <Container>
-       
+       <div className="text-[39px] pb-[50px] pt-[50px] font-bold">Eid Offers </div>
         <Slider {...settings}>
             <div>
                 <Product src={cap} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>

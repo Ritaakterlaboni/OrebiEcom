@@ -26,7 +26,7 @@ const Product = ({ src, productTxt, productPrizeTxt,bottomTypes }) => {
       </div>
 
       {/* Hover Bottom Part - slide up on hover */}
-      <div className="absolute bottom-22 left-0 w-full bg-white py-9 
+      <div className="absolute bottom-20 left-0 w-full bg-white py-9 
                       translate-y-full group-hover:translate-y-0 
                       transition-transform duration-500 ease-in-out z-0">
         <Flex className='justify-end pr-5 gap-2'>

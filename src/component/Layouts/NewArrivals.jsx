@@ -26,6 +26,7 @@ const NewArrivals = () => {
     <>
   
      <Container>
+      <div className="text-[39px] pb-[50px] pt-[100px] font-bold">New Arrivals</div>
         
          <Slider {...settings}>
             <div>
