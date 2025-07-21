@@ -8,7 +8,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Product = ({ src, productTxt, productPrizeTxt,bottomTypes }) => {
   return (
-    <div className="relative group w-full bg-white overflow-hidden">
+    <div className="relative group/product w-full bg-white overflow-hidden">
 
       {/* Product Image */}
       <div className="relative">
@@ -27,7 +27,7 @@ const Product = ({ src, productTxt, productPrizeTxt,bottomTypes }) => {
 
       {/* Hover Bottom Part - slide up on hover */}
       <div className="absolute bottom-20 left-0 w-full bg-white py-9 
-                      translate-y-full group-hover:translate-y-0 
+                      translate-y-full group-hover/product:translate-y-0 
                       transition-transform duration-500 ease-in-out z-0">
         <Flex className='justify-end pr-5 gap-2'>
           <p className='hover:text-menuhoverC text-menuC font-semibold'>Add to Wish List</p><FaHeart />

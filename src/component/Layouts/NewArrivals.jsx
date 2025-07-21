@@ -9,6 +9,8 @@ import ghori from '/src/assets/ghori.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NextArrow from '../NextArrow'
+import PrevArrow from '../PrevArrow'
 
 
 
@@ -21,6 +23,11 @@ const NewArrivals = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    
+    prevArrow:<PrevArrow/>,
+    nextArrow:<NextArrow/>,
+    
+    pauseOnHover: false,
   };
   return (
     <>
@@ -28,7 +35,7 @@ const NewArrivals = () => {
      <Container>
       <div className="text-[39px] pb-[50px] pt-[100px] font-bold">New Arrivals</div>
         
-        <div className="-mx-4">
+        <div className="-mx-4 relative group">
            <Slider {...settings}>
             <div className="px-4">
               <Product src={cat} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00'/>

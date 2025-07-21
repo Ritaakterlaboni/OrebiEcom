@@ -8,6 +8,8 @@ import blackbag from '/src/assets/blackbag.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";
+import PrevArrow from '../PrevArrow'
+import NextArrow from '../NextArrow'
 
 
 
@@ -19,6 +21,11 @@ const SpeacialOffer = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+
+    prevArrow:<PrevArrow/>,
+    nextArrow:<NextArrow/>,
+
+    pauseOnHover: false,
   };
   return (
     <>
@@ -27,7 +34,7 @@ const SpeacialOffer = () => {
   <div className="pb-[100px]">
        <Container>
             <div className="text-[39px] pb-[50px] pt-[100px] font-bold">Speacial Offers</div>
-               <div className="-mx-4">
+               <div className="-mx-4 relative group">
                  <Slider {...settings}>
                     <div className="px-4">
                         <Product src={bag} productTxt={'Basic Crew Neck Tee'} productPrizeTxt='$44.00' bottomTypes={'Black'}/>
