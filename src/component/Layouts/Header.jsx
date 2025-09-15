@@ -64,7 +64,7 @@ const[show, setShow] =useState(false);
 
 
                      {showmenu && (
-                                <div className="bg-black p-[20px] text-white absolute top-[50px] left-[20px]">
+                                <div className="bg-black p-[20px] text-white absolute top-[50px] left-[20px] z-11">
                                     <p className='pb-3'>Accesories</p> 
                                     <p className='pb-3'>Furniture</p>
                                     <p className='pb-3'>Clothes</p>
@@ -85,7 +85,7 @@ const[show, setShow] =useState(false);
                                 <div className=""><FaUser /></div>
                                 <div className="relative"><IoMdArrowDropdown/></div>
                                  {show &&(
-                                    <div className=" bg-black text-white px-[30px] py-[20px] absolute top-[165px] right-[90px]">
+                                    <div className="z-11 bg-black text-white px-[30px] py-[20px] absolute top-[165px] right-[90px]">
                                         <p className='pb-4'>My Account</p>
                                         <p className=''>Log Out</p>
                                     </div>
