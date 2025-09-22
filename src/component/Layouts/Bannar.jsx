@@ -9,9 +9,12 @@ const Bannar = () => {
    var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
+
+//koita banner dekhabo akbare
+
     autoplay:true,
     autoplaySpeed:1000,
   };

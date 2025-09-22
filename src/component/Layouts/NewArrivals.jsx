@@ -1,7 +1,6 @@
 import React from 'react'
 import Product from '../Product'
 import Container from '../Container'
-import Flex from '../Flex'
 import cat from '/src/assets/Doll.png'
 import jhuri from '/src/assets/jhuri.png'
 import watch from '/src/assets/watch.png'
@@ -11,8 +10,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NextArrow from '../NextArrow'
 import PrevArrow from '../PrevArrow'
-
-
 
 
 
@@ -29,6 +26,7 @@ const NewArrivals = () => {
     
     pauseOnHover: false,
   };
+
   return (
     <>
   

@@ -7,6 +7,7 @@ import Contacts from './component/Pages/Contacts';
 import About from './component/Pages/About';
 import Journal from './component/Pages/Journal';
 import Error from './component/Pages/Error';
+import Cart from './component/Pages/Cart';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contacts/>}/>
         <Route path='/journal' element={<Journal/>}/>
+        <Route path='/cart' element={<Cart/>}/>
         <Route path='*' element={<Error/>}/>
       </Route>
      </Routes>

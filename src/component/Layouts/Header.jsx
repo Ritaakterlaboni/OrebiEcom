@@ -17,6 +17,7 @@ const [showmenu, setShowmenu] = useState(false);
 const[show, setShow] =useState(false);
 
 
+
   return (
     <>
     <Container> 
@@ -46,6 +47,7 @@ const[show, setShow] =useState(false);
                     <Link to={'/journal'}>
                     <li className='hover:text-menuhoverC text-menuC'>Journal</li>
                     </Link>
+                  
 
                 </Menu>
             </div>
@@ -56,33 +58,38 @@ const[show, setShow] =useState(false);
      <div className='bg-bgC'>
            <Container >
             <Flex className='py-5 justify-between'>
-                    
-                        <div onClick={()=>setShowmenu(!showmenu)} className="flex items-center gap-3 relative">
+                    <div className="">
+                        
+                        <div  onClick={()=>setShowmenu(!showmenu)} className="flex items-center gap-3 relative">
                             <FaBars/>
                             <div className="">Shop by Category</div>
 
 
 
-                     {showmenu && (
-                                <div className="bg-black p-[20px] text-white absolute top-[50px] left-[20px] z-11">
-                                    <p className='pb-3'>Accesories</p> 
-                                    <p className='pb-3'>Furniture</p>
-                                    <p className='pb-3'>Clothes</p>
-                                    <p className='pb-3'>Electronics</p>
-                                    <p className=''>Bags</p>
+                            {showmenu && (
+                                        <div className="bg-black p-[20px] text-white absolute top-[50px] left-[20px] z-11">
+                                            <p className='pb-3'>Accesories</p> 
+                                            <p className='pb-3'>Furniture</p>
+                                            <p className='pb-3'>Clothes</p>
+                                            <p className='pb-3'>Electronics</p>
+                                            <p className=''>Bags</p>
 
-
-
-                                </div>
-                            )}
+                                        </div>
+                                    )}
                         </div>
+                    </div>
                         <div className="relative">
                             <input type='text' placeholder='Search Products' className='w-[600px] p-5 bg-white outline-0'/>
                              <FaSearch className='absolute top-1/2 right-4 transform -translate-y-1/2'/>          {/*posotion dile transform -translate-y-1/2 dite hobe */}
                         </div>
                         <div className="flex items-center gap-3">
-                            <div className="flex items-center"  onClick={()=>setShow(!show)}>
-                                <div className=""><FaUser /></div>
+                            <div className="user flex items-center"  onClick={()=>setShow(!show)}>
+                                <div className="">
+                            
+                                        <FaUser />
+                               
+                                    
+                                </div>
                                 <div className="relative"><IoMdArrowDropdown/></div>
                                  {show &&(
                                     <div className="z-11 bg-black text-white px-[30px] py-[20px] absolute top-[165px] right-[90px]">
@@ -91,7 +98,10 @@ const[show, setShow] =useState(false);
                                     </div>
                                 )}
                             </div>
-                            <FaShoppingCart />
+                                <Link to={'/cart'}>
+                                    <FaShoppingCart />
+                                </Link>
+                           
                         </div>
                   
                                
