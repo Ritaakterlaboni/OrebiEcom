@@ -8,13 +8,14 @@ import { FaSearch,FaUser,FaShoppingCart,FaBars    } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import DropDown from '../DropDown'
 
 
 const Header = () => {
 
 const [showmenu, setShowmenu] = useState(false);
-
 const[show, setShow] =useState(false);
+const[showcart, setShowcart] = useState(false);
 
 
 
@@ -98,9 +99,18 @@ const[show, setShow] =useState(false);
                                     </div>
                                 )}
                             </div>
-                                <Link to={'/cart'}>
-                                    <FaShoppingCart />
-                                </Link>
+                                {/* <div className="relative inline-block">
+                                    <div><FaShoppingCart className="ml-6 cursor-pointe" onClick={() => setShowcart(!showcart)}/></div>
+                                    {showcart && (
+                                        <div className="absolute top-full right-0 mt-2 z-50">
+                                            <DropDown onClick={() => setShowcart(false)}/>
+                                        </div>
+                                    )}
+                                </div> */}
+                                  <Link to='/cart'>
+                                    <FaShoppingCart/>
+                                  </Link> 
+                   
                            
                         </div>
                   

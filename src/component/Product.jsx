@@ -5,16 +5,12 @@ import Flex from './Flex'
 import { FaHeart } from "react-icons/fa";
 import { FaCodeCompare } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
-import { useDispatch, useSelector } from 'react-redux';
-import { addItem } from '../features/addToCart/cartSlice';
 
 
 const Product = ({ src, productTxt, productPrizeTxt,bottomTypes }) => {
 
-const dispatch = useDispatch();
 
-const cart = useSelector((state) => state.AddToCart.value)
-// GiSattelite.AddToCart aita aise store ar thake
+
 
   return (
     <div className="relative group/product w-full bg-white overflow-hidden">
@@ -45,11 +41,11 @@ const cart = useSelector((state) => state.AddToCart.value)
           <p className='hover:text-menuhoverC text-menuC font-semibold'>Compare</p><FaCodeCompare />
         </Flex>
        
-          <div className="" onClick={() => dispatch(addItem())}>
+          <div className="">
             <Flex className='justify-end pr-5 gap-2'>
               <p className='hover:text-menuhoverC text-menuC font-semibold' >Add to Cart</p><FaShoppingCart />
             </Flex>
-            <p>{cart}</p>
+            <p></p>
           </div>
         
       </div>
