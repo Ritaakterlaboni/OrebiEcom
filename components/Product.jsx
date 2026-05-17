@@ -1,10 +1,10 @@
 import React from 'react'
-import Images from './Images'
-import Badge from './Badge'
-import Flex from './Flex'
 import { FaHeart } from "react-icons/fa";
 import { FaCodeCompare } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
+import Images from './Images';
+import Flex from './Flex';
+import Badge from './Badge';
 
 
 const Product = ({ src, productTxt, productPrizeTxt,bottomTypes }) => {

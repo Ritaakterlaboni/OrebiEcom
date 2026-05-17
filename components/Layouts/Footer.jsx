@@ -1,9 +1,10 @@
-import Container from "../Container"
-import Heading from "../Heading"
-import Images from "../Images"
-import Menu from "../Menu"
-import logo from "../../assets/OREBI©.png"
+
 import { FaFacebookF,FaLinkedinIn,FaInstagram  } from "react-icons/fa";
+import Container from "../Container";
+import Menu from "../Menu";
+import Heading from "../Heading";
+import Images from "../Images";
+import logo from "../../src/assets/OREBI©.png"
 
 
 

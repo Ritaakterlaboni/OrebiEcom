@@ -1,28 +1,29 @@
-import React, { useState } from "react";
-import Container from "../Container";
+import React from "react";
 import { ImCross } from "react-icons/im";
-import { IoIosArrowForward } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import {
   Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Link } from "react-router-dom";
+    SelectContent,
+      SelectGroup,
+        SelectItem,
+          SelectLabel,
+            SelectTrigger,
+              SelectValue,
+              } from "@/components/ui/select";
+              import { Link } from "react-router-dom";
+import Container from "../Container";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const Cart = () => {
   return (
     <>
     <section className="py-30">
       <Container>
-       <h1 class="font-dmSans font-bold text-5xl text-menuHeading">Cart</h1>
-       <p class="font-dmSans text-[12px] text-header pt-5.5">
+       <h1 className="font-dmSans font-bold text-5xl text-menuHeading">Cart</h1>
+       <p className="font-dmSans text-[12px] text-header pt-5.5 flex">
         Home <IoIosArrowForward/>Cart
        </p>
       </Container>
@@ -73,7 +74,7 @@ const Cart = () => {
       </table>
       <div className="border border-infoBg p-5 border-t-0 flex justify-between items-center">
           <div className="flex gap-x-5 items-center">
-            <Select className={"rounded-none!"}>
+            <Select className="rounded-none">
               <SelectTrigger className="w-40 h-10 rounded-none">
                 <SelectValue placeholder={"SIZE"} />
               </SelectTrigger>
@@ -146,7 +147,7 @@ const Cart = () => {
             </tbody>
           </table>
           <Link to={"/"}>
-            <button className="py-5 px-8 text-white text-sm font-bold font-dmSa bg-menuHeading cursor-pointer border border-menuHeading">
+            <button className="mb-30 py-5 px-8 text-white text-sm font-bold font-dmSa bg-black cursor-pointer border border-menuHeading">
               Proceed to Checkout
             </button>
           </Link>

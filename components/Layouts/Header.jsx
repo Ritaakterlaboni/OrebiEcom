@@ -1,14 +1,14 @@
 
-import Container from '../Container'
-import Flex from '../Flex'
-import Images from '../Images'
-import Logo from '../../assets/OREBI©.png'
-import Menu from '../Menu'
 import { FaSearch,FaUser,FaShoppingCart,FaBars    } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import DropDown from '../DropDown'
+import Container from "../Container";
+import Flex from "../Flex";
+import Images from "../Images";
+import Menu from "../Menu";
+import Logo from "../../src/assets/OREBI©.png"
+
 
 
 const Header = () => {

@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './component/Pages/Home'
-import RootLayout from './component/Layouts/RootLayout'
-import Shop from './component/Pages/Shop';
-import Contacts from './component/Pages/Contacts';
-import About from './component/Pages/About';
-import Journal from './component/Pages/Journal';
-import Error from './component/Pages/Error';
-import Cart from './component/Pages/Cart';
+import Home from '../components/Pages/Home'
+import RootLayout from '../components/Layouts/RootLayout'
+import Shop from '../components/Pages/Shop';
+import Contacts from '../components/Pages/Contacts';
+import About from '../components/Pages/About';
+import Journal from '../components/Pages/Journal';
+import Error from '../components/Pages/Error';
+import Cart from '../components/Pages/Cart';
 
 function App() {
   
