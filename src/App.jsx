@@ -8,7 +8,7 @@ import About from '../components/Pages/About';
 import Journal from '../components/Pages/Journal';
 import Error from '../components/Pages/Error';
 import Cart from '../components/Pages/Cart';
-import Checkout from '../components/Pages/checkOut';
+import Checkout from '../components/Pages/Checkout';
 
 
 function App() {

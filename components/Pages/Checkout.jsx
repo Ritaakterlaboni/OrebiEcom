@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 
-const checkOut = () => {
+const Checkout = () => {
   return (
     <>
      <section className="">
@@ -22,4 +22,4 @@ const checkOut = () => {
   )
 }
 
-export default checkOut
+export default Checkout
