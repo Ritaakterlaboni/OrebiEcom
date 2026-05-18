@@ -15,7 +15,7 @@ const DropDown = () => {
             <Link to={"/cart"}>
               <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">View Cart</button>
             </Link>
-            <Link to={"/checkout"}>
+            <Link to={"/checkOut"}>
               <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">Check Out</button>
             </Link>
           </div>
