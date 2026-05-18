@@ -70,7 +70,7 @@ const Filter = () => {
                                         {isOpen ? "-" : "+"}
                                     </span>
                                 </button>
-                                <div className={`px-4 bg-infoBg w-full text-base text-header font-dmSans transition-all duration-300
+                                <div className={`text-[#6D6D6D] px-4 w-full text-base text-header transition-all duration-300
                                      ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
                                 </div>
                                 </div>
