@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Container from '../Container'
 import Accordion from '../Accordion';
 import { IoMdArrowDropdown } from "react-icons/io";

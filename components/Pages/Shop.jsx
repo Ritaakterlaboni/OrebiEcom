@@ -1,9 +1,6 @@
-import { useState } from "react";
+
 import Container from "../Container"
 import Filter from "../Layouts/Filter";
-import Accordion from "../Accordion";
-
-
 
 
 const Shop = () => {
