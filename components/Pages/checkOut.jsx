@@ -1,9 +1,9 @@
 import React from 'react'
 import Container from '../Container'
 
-const check = () => {
+const checkOut = () => {
   return (
-         <>
+             <>
      <section className="">
       <Container>
         <div className="py-30 ">
@@ -22,4 +22,4 @@ const check = () => {
   )
 }
 
-export default check
+export default checkOut
