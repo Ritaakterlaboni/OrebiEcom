@@ -28,3 +28,12 @@ shadcn install ===>
 4. npx shadcn@latest init
 5. Base
 6. Nova
+
+
+
+
+
+
+
+
+
