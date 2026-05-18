@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom'
 
 
 const DropDown = () => {
-  
+
   return (
     <>
-    <div className="w-89.5 p-5 border-2 bg-white absolute top-9 right-0">
-      <div className="bg-bgC"></div>
-      <div className="bg-white">
-        <p className="py-5">Subtotal: $12.2</p>
-        <div className="flex justify-between items-center">
-          <Link to={"/Cart"}>
-          <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">View Cart</button>
-          </Link>
-          <Link to={"/Checkout"}>
-          <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">Checkout</button>
-          </Link>
+      <div className="w-89.5 p-5 border-2 bg-white absolute top-9 right-0">
+        <div className="bg-bgC"></div>
+        <div className="bg-white">
+          <p className="py-5">Subtotal: $12.2</p>
+          <div className="flex justify-between items-center">
+            <Link to={"/cart"}>
+              <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">View Cart</button>
+            </Link>
+            <Link to={"/checkout"}>
+              <button className="border-black border-2 py-3.5 px-10 text-sm hover:bg-black hover:text-white transition-all duration-300">Check Out</button>
+            </Link>
+          </div>
+
+
         </div>
-
-
       </div>
-    </div>
     </>
   )
 }

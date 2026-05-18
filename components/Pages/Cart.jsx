@@ -14,7 +14,7 @@ import {
               } from "@/components/ui/select";
               import { Link } from "react-router-dom";
 import Container from "../Container";
-import { IoIosArrowForward } from "react-icons/io";
+
 
 
 const Cart = () => {
@@ -29,17 +29,17 @@ const Cart = () => {
       </Container>
     </section>
     <Container>
-      <table className='border w-full border-infoBg'>
+      <table className='border w-full border-infobgC'>
         <thead className='border border-[#F5F7F7] bg-bgC w-full'>
           <tr>
-            <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Product</th>
-            <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Price</th>
-            <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Quantity</th>
-            <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Total</th>
+            <th className="p-5 w-1/4 text-left">Product</th>
+            <th className="p-5 w-1/4 text-left">Price</th>
+            <th className="p-5 w-1/4 text-left">Quantity</th>
+            <th className="p-5 w-1/4 text-left">Total</th>
 
           </tr>
         </thead>
-        <tbody className="border border-infoBg w-full">
+        <tbody className="border border-infobgC w-full">
           <tr>
             <td className="px-5 py-6">
               <div className="flex items-center">
@@ -54,9 +54,9 @@ const Cart = () => {
               </div>
               
             </td>
-            <td className="text-[20px] font-dmSans font-bold text-menuHeading py-6 px-5 justify-center">$12.2</td>
+            <td className="text-[20px] font-bold text-menuHeading py-6 px-5 justify-center">$12.2</td>
             <td className="py-6 px-5">
-              <div className="py-1.5 px-4 w-36 border border-infoBg flex gap-x-10 font-dmSans text-header justify-center">
+              <div className="py-1.5 px-4 w-36 border border-infobgC flex gap-x-10 text-header justify-center">
                    <button
                       className="cursor-pointer">
                       -
@@ -68,11 +68,11 @@ const Cart = () => {
                     </button>
               </div>
             </td>
-            <td className="text-[20px] font-dmSans font-bold text-menuHeading py-6 px-5">$12.2</td>
+            <td className="text-[20px] font-bold text-menuHeading py-6 px-5">$12.2</td>
           </tr>
         </tbody>
       </table>
-      <div className="border border-infoBg p-5 border-t-0 flex justify-between items-center">
+      <div className="border border-infobgC p-5 border-t-0 flex justify-between items-center">
           <div className="flex gap-x-5 items-center">
             <Select className="rounded-none">
               <SelectTrigger className="w-40 h-10 rounded-none">
@@ -102,52 +102,52 @@ const Cart = () => {
               />
 
               <Button
-                className="rounded-none cursor-pointer font-dmSans"
+                className="rounded-none cursor-pointer"
 >
                 Apply Coupon
               </Button>
             </Field>
           </div>
 
-          <button className="font-bold font-dmSans text-sm text-menuHeading cursor-pointer">
+          <button className="font-bold text-sm text-menuHeading cursor-pointer">
             Update Cart
           </button>
         </div>
 
          <div className="text-end">
-          <p className="pt-13 text-[20px] font-dmSans font-bold text-menuHeading">
+          <p className="pt-13 text-[20px] font-bold">
             Cart totals
           </p>
-          <table className="border border-infoBg mt-6 mb-7.5 ml-auto text-left">
+          <table className="border border-infobgC mt-6 mb-7.5 ml-auto text-left ">
             <tbody>
-              <tr className="border-b border-infoBg">
-                <th className="font-bold font-dmSans text-base text-menuHeading py-4 px-5 w-2xs border-r border-infoBg text-left">
+              <tr className="border-b border-infobgC">
+                <th className="font-bold py-4 px-5 w-2xs border-r border-infobgC text-left ">
                   Subtotal
                 </th>
-                <td className="font-dmSans font-medium text-base text-header py-4 px-5 w-2xs">
+                <td className="font-medium py-4 px-5 w-2xs">
                   $
                 </td>
               </tr>
-              <tr className="border-b border-infoBg">
-                <th className="font-bold font-dmSans text-base text-menuHeading py-4 px-5 w-2xs border-r border-infoBg text-left">
+              <tr className="border-b border-infobgC">
+                <th className="font-bold py-4 px-5 w-2xs border-r border-infobgC text-left ">
                   Discount
                 </th>
-                <td className="font-dmSans font-medium text-base text-header py-4 px-5 w-2xs">
+                <td className="font-medium py-4 px-5 w-2xs ">
                   -$
                 </td>
               </tr>
               <tr>
-                <th className="font-bold font-dmSans text-base text-menuHeading py-4 px-5 w-2xs border-r border-infoBg text-left">
+                <th className=" py-4 px-5 w-2xs border-r border-infobgC text-left">
                   Total
                 </th>
-                <td className="font-dmSans text-base text-menuHeading py-4 px-5 w-2xs font-semibold">
+                <td className=" py-4 px-5 w-2xs font-semibold">
                   $
                 </td>
               </tr>
             </tbody>
           </table>
           <Link to={"/"}>
-            <button className="mb-30 py-5 px-8 text-white text-sm font-bold font-dmSa bg-black cursor-pointer border border-menuHeading">
+            <button className="mb-30 py-5 px-8 text-white text-sm font-bold bg-black cursor-pointer border border-menuC">
               Proceed to Checkout
             </button>
           </Link>

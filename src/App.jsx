@@ -8,6 +8,8 @@ import About from '../components/Pages/About';
 import Journal from '../components/Pages/Journal';
 import Error from '../components/Pages/Error';
 import Cart from '../components/Pages/Cart';
+import Checkout from '../components/Pages/checkOut';
+
 
 function App() {
   
@@ -23,6 +25,7 @@ function App() {
         <Route path='/contact' element={<Contacts/>}/>
         <Route path='/journal' element={<Journal/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
         <Route path='*' element={<Error/>}/>
       </Route>
      </Routes>

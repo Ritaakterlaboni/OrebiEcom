@@ -1,89 +1,42 @@
 import React, { useState } from 'react'
 import Container from '../Container'
+import Accordion from '../Accordion';
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Filter = () => {
-    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    };
     return (
         <>
             <section>
-                <div className="">
-                    <Container>
-                        <div className="category">
-                            <div className="w-1/4">
-                                <p className="text-[20px] font-bold mb-3">Shop By Category</p>
-                                <div className="">
-                                <button className="text-[#6D6D6D] gap-x-20 border-infobgC items-start flex border-b-2 py-5" onClick={toggleAccordion}>
-                                    <p>Category 1</p>
-                                    <span className="font-bold">
-                                        {isOpen ? "-" : "+"}
-                                    </span>
-                                </button>
-                                <div className={`px-4 bg-infoBg w-full text-base text-header font-dmSans transition-all duration-300
-                                     ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
-                                </div>
-                                </div>
+                <Container>
+                    <div className="w-full">
+                        <p className="text-[20px] font-bold mb-3 w-full">Shop By Category</p>
+                    </div>
+                </Container>
+                <Accordion title={"Category 1"} content={"Lorem ipsum dolor sit amet."} />
+                <Accordion title={"Category 2"} content={"Lorem ipsum dolor sit amet."} />
+                <Accordion title={"Category 3"} content={"Lorem ipsum dolor sit amet."} />
+                <Accordion title={"Category 4"} content={"Lorem ipsum dolor sit amet."} />
+                <Accordion title={"Category 5"} content={"Lorem ipsum dolor sit amet."} />
 
-                                <div className="">
-                                <button className="text-[#6D6D6D] gap-x-20 border-infobgC items-start flex border-b-2 py-5" onClick={toggleAccordion}>
-                                    <p>Category 2</p>
-                                    <span className="font-bold">
-                                        {isOpen ? "-" : "+"}
-                                    </span>
-                                </button>
-                                <div className={`px-4 bg-infoBg w-full text-base text-header font-dmSans transition-all duration-300
-                                     ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
-                                </div>
-                                </div>
-
-                                <div className="">
-                                <button className="text-[#6D6D6D] gap-x-20 border-infobgC items-start flex border-b-2 py-5" onClick={toggleAccordion}>
-                                    <p>Category 3</p>
-                                    <span className="font-bold">
-                                        {isOpen ? "-" : "+"}
-                                    </span>
-                                </button>
-                                <div className={`px-4 bg-infoBg w-full text-base text-header font-dmSans transition-all duration-300
-                                     ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
-                                </div>
-                                </div>
-
-                                <div className="">
-                                <button className="text-[#6D6D6D] gap-x-20 border-infobgC items-start flex border-b-2 py-5" onClick={toggleAccordion}>
-                                    <p>Category 4</p>
-                                    <span className="font-bold">
-                                        {isOpen ? "-" : "+"}
-                                    </span>
-                                </button>
-                                <div className={`px-4 bg-infoBg w-full text-base text-header font-dmSans transition-all duration-300
-                                     ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
-                                </div>
-                                </div>
-
-                                <div className="">
-                                <button className="text-[#6D6D6D] gap-x-20 border-infobgC items-start flex border-b-2 py-5" onClick={toggleAccordion}>
-                                    <p>Category 5</p>
-                                    <span className="font-bold">
-                                        {isOpen ? "-" : "+"}
-                                    </span>
-                                </button>
-                                <div className={`text-[#6D6D6D] px-4 w-full text-base text-header transition-all duration-300
-                                     ${isOpen ? "opacity-100 py-2.5 h-17.5" : "opacity-0 h-0 py-0"}`}>Lorem ipsum dolor sit amet.
-                                </div>
-                                </div>
-                                </div>
-                                </div>
-
-
-
-                        <div className="">
-
-                        </div>
-                    </Container>
-                </div>
+                <Container >
+                    <div className="text-[20px] font-bold my-10 flex items-center">
+                        Shop By Color <IoMdArrowDropdown/>
+                    </div>
+                    <div className="text-[20px] font-bold my-10 flex items-center">
+                        Shop By Brand <IoMdArrowDropdown/>
+                    </div>
+                    <div className="text-[20px] font-bold mt-10 mb-5">
+                        Shop By Price
+                    </div>
+                  <div className="w-1/4">
+                    <div className="text-[#6D6D6D] py-5 border-b-2 border-infobgC">$0.00 - $9.99</div>
+                    <div className="text-[#6D6D6D] py-5 border-b-2 border-infobgC">$1000 - $19.99</div>
+                    <div className="text-[#6D6D6D] py-5 border-b-2 border-infobgC">$20.00 - $29.99</div>
+                    <div className="text-[#6D6D6D] py-5 border-b-2 border-infobgC">$30.00 - $39.99</div>
+                    <div className="text-[#6D6D6D] py-5 border-b-2 border-infobgC">$40.00 - $69.99</div>
+                  </div>
+                </Container>
             </section>
         </>
     )
