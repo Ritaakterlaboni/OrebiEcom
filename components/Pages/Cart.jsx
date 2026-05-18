@@ -20,17 +20,17 @@ import { IoIosArrowForward } from "react-icons/io";
 const Cart = () => {
   return (
     <>
-    <section className="py-30">
+    <section className="py-30 ">
       <Container>
-       <h1 className="font-dmSans font-bold text-5xl text-menuHeading">Cart</h1>
-       <p className="font-dmSans text-[12px] text-header pt-5.5 flex">
-        Home <IoIosArrowForward/>Cart
+       <h1 className=" font-bold text-5xl text-menuHeading">Cart</h1>
+       <p className=" text-[12px] text-header pt-5.5 flex">
+        Home &gt; Cart
        </p>
       </Container>
     </section>
     <Container>
       <table className='border w-full border-infoBg'>
-        <thead className='border border-[#F5F7F7] bg-bHeaderBg w-full'>
+        <thead className='border border-[#F5F7F7] bg-bgC w-full'>
           <tr>
             <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Product</th>
             <th className="font-dmSans font-bold text-base text-menuHeading p-5 w-1/4 text-left">Price</th>

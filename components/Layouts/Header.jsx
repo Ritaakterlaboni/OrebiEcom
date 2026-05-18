@@ -8,6 +8,7 @@ import Flex from "../Flex";
 import Images from "../Images";
 import Menu from "../Menu";
 import Logo from "../../src/assets/OREBI©.png"
+import DropDown from "../Pages/DropDown";
 
 
 
@@ -99,17 +100,15 @@ const[showcart, setShowcart] = useState(false);
                                     </div>
                                 )}
                             </div>
-                                {/* <div className="relative inline-block">
+                                <div className="relative inline-block">
                                     <div><FaShoppingCart className="ml-6 cursor-pointe" onClick={() => setShowcart(!showcart)}/></div>
                                     {showcart && (
                                         <div className="absolute top-full right-0 mt-2 z-50">
                                             <DropDown onClick={() => setShowcart(false)}/>
                                         </div>
                                     )}
-                                </div> */}
-                                  <Link to='/cart'>
-                                    <FaShoppingCart/>
-                                  </Link> 
+                                </div>
+
                    
                            
                         </div>
